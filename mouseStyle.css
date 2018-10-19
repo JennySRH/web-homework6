@@ -1,0 +1,81 @@
+#general{
+    text-align: center;
+}
+
+#general input{
+    border:2px solid rgb(238, 238,238);
+}
+
+#button-container #record input{
+    margin-bottom: 4px;
+    height: 17px;
+    width: 38px;
+}
+
+
+#button-container #gameStart input {
+    margin-top: 6px;
+}
+
+#button-container button{
+    margin-top:0px;
+    background-color:white;
+    border:2px solid rgb(238, 238,238);
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+#button-container{
+    position: relative;
+    width: 306px;
+    height: 60px;
+    margin:0 auto;
+}
+
+#button-container #gameStart{
+    width: 156px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top:0px;
+}
+
+#button-container #record{
+    width: 156px;
+    height: 50px;
+    position: absolute;
+    left: 170px;
+    top:0px;
+}
+
+#blank{
+    height: 20px;
+    width: 100%;
+}
+
+#mouseHole{
+    margin:0 auto;
+    width: 237px;
+    height: 168px;
+    border-top:solid;
+    border-bottom: solid;
+    border-top-color: rgb(238, 238,238);
+    border-bottom-color: rgb(238, 238,238);
+}
+
+#mouseHole #input-container{
+    margin-top: 6px;
+    margin-left: 5px;
+}
+
+#mouseHole #input-container input{
+    margin-right: 5px;
+    margin-top:8px;
+    border:2px solid rgb(238, 238,238);
+
+}
+
+input[type="radio"]:checked + label::before{
+    background-color: white;
+    
+}
