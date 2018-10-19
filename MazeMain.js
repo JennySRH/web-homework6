@@ -52,6 +52,7 @@ function leavefunction() {
 }
 
 function recover() {
+    document.getElementById("Display").innerText = "";
     start_flag = 0;
     end_flag = 0;
     lose_flag = 0;
