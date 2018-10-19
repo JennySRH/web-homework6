@@ -16,7 +16,7 @@ for(var i = 0;i < 5;i ++) {
 }
 
 function wallfunction() {
-    if(start_flag == 1 && end_flag == 0) {
+    if(start_flag == 1 && end_flag == 0 && cheat_flag == 0) {
         lose_flag = 1;
         var wall_temp = document.getElementsByClassName("wall");
         for(var i = 0;i < 5;i ++) {
@@ -34,6 +34,28 @@ function endfunction() {
         end_flag = 1;
         document.getElementById("Display").innerText = "You Win";
     }
+    if(start_flag == 0) {
+        cheat_flag = 1;
+        document.getElementById("Display").innerText = "Don't cheat, you should start form the 'S' and move to the 'E' inside the maze!";
+    }
+}
+
+
+var maze = document.getElementById("wall-container");
+maze.addEventListener("mouseleave",leavefunction);
+function leavefunction() {
+    if(start_flag == 1 && end_flag == 0) {
+        cheat_flag = 1;
+        document.getElementById("Display").innerText = "Don't cheat, you should start form the 'S' and move to the 'E' inside the maze!";
+    }
+    recover();
+}
+
+function recover() {
+    start_flag = 0;
+    end_flag = 0;
+    lose_flag = 0;
+    cheat_flag = 0;   
 }
 
 
