@@ -1,0 +1,106 @@
+
+#wall-container{
+    width:306px;
+    height: 180px;
+    margin:0 auto;
+    padding: 0px;
+}
+
+
+#wall-container #top-left{
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 0px;
+    border:solid;
+    border-width: 1px;
+    padding: 0px;
+    height: 120px;
+    width:92px;   
+    background-color: rgb(238, 238,238);
+}
+
+#wall-container #top-mid{
+    position: absolute;
+    margin-top: 0px;
+    margin-left:93px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    padding: 0px;
+    height: 31px;
+    width:120px;   
+    background-color: rgb(238, 238,238);
+}
+
+
+#wall-container #top-right{
+    position: absolute;
+    margin-left:212px;
+    margin-top: 0px;
+    border:solid;
+    border-width: 1px;
+    padding: 0px;
+    float: left;
+    height: 120px;
+    width: 92px;
+    background-color: rgb(238, 238,238);
+
+}
+
+
+#wall-container #bottom-down{
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 0px;
+    border-style: solid;
+    border-width: 1px;
+
+    padding: 0px;
+    height: 29px;
+    width:304px;   
+    background-color: rgb(238, 238,238);
+}
+
+#wall-container #bottom-up{
+    position: absolute;
+    margin-top: 59px;
+    margin-left:122px;
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 0px;
+    height: 91px;
+    width:60px;   
+    background-color: rgb(238, 238,238);
+}
+
+
+#wall-container #start{
+    position: absolute;
+    margin-top: 124px;
+    margin-left: 0px;
+    border:solid;
+    border-width: 1px;
+    width:22.5px;
+    height:22.5px;
+    background-color: #82ff7d;
+    text-align: center;
+    font-weight: bold;
+}
+
+#wall-container #end{
+    position: absolute;
+    margin-top: 124px;
+    margin-left: 281.5px;
+    border:solid;
+    border-width: 1px;
+    width:22.5px;
+    height:22.5px;
+    background-color: #8A83F6;
+    text-align: center;
+    font-weight: bold;
+}
