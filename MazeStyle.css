@@ -6,9 +6,9 @@ body{
 
 #Display{
     margin: 0 auto;
-    width:1000px;
-    height: 80px;
+    height: 60px;
     font-size: 20px;
+    text-align: center;
     color: red;
 }
 

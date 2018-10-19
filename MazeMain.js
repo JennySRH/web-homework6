@@ -46,13 +46,17 @@ maze.addEventListener("mouseleave",leavefunction);
 function leavefunction() {
     if(start_flag == 1 && end_flag == 0) {
         cheat_flag = 1;
-        document.getElementById("Display").innerText = "Don't cheat, you should start form the 'S' and move to the 'E' inside the maze!";
     }
     recover();
 }
 
+
 function recover() {
     document.getElementById("Display").innerText = "";
+    var wall = document.getElementsByClassName("wall");
+    for(var i = 0;i < 5;i ++) {
+        wall[i].style.cssText="background-color:rgb(238, 238,238);";
+    }
     start_flag = 0;
     end_flag = 0;
     lose_flag = 0;
