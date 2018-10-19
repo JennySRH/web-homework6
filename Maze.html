@@ -6,19 +6,19 @@
     <title>Mouse Maze</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="MazeStyle.css" />
-    <script src="MazeMain.js"></script>
 </head>
 <body>
+    <div id="Display"></div>
     <p id="head-name">The Amazing Mouse Maze!</h1>
     <p id="overview">Move your mouse over the "S" to begin.<br>
         Don't cheat, you should start from the 'S' and move to the 'E' inside the maze!
     </p>
     <div id="wall-container">
-        <div id="top-left"></div>
-        <div id="top-right"></div>
-        <div id="top-mid"></div>
-        <div id="bottom-down"></div>
-        <div id="bottom-up"></div>
+        <div id="top-left" class="wall"></div>
+        <div id="top-right" class="wall"></div>
+        <div id="top-mid" class="wall"></div>
+        <div id="bottom-down" class="wall"></div>
+        <div id="bottom-up" class="wall"></div>
 
         <div id="start">S</div>
         <div id="end">E</div>
@@ -26,10 +26,11 @@
     </div>
 
     <p id="comment1">The object of this game is to guide the mouse cursor through the start area
-        <br>
-        and get to the end arear. Be sure to avoid the walls:    </p>
-        <div id="single-wall"></div>
+    <br>
+    and get to the end arear. Be sure to avoid the walls:    </p>
+    <div class="single-wall"></div>
     <p id="comment2">Good luck!</p>
-
 </body>
 </html>
+
+<script src="MazeMain.js"></script>
