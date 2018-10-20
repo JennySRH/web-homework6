@@ -1,9 +1,21 @@
+body{
+    background-color: whitesmoke;
+}
+
+#header-name {
+    font-size: 20px;
+}
+
+#overview{
+    font-size: 15px;
+}
+
 #general{
     text-align: center;
 }
 
 #general input{
-    border:2px solid rgb(238, 238,238);
+    background-color: white;
 }
 
 #button-container #record input{
@@ -16,13 +28,13 @@
 
 #button-container #gameStart input {
     margin-top: 6px;
+    width:140px;
 }
 
 #button-container button{
     margin-top:0px;
     background-color:white;
-    border:2px solid rgb(238, 238,238);
-    border-radius: 5px;
+    border-radius: 3px;
     font-size: 12px;
 }
 
@@ -60,8 +72,9 @@
     height: 168px;
     border-top:solid;
     border-bottom: solid;
-    border-top-color: rgb(238, 238,238);
-    border-bottom-color: rgb(238, 238,238);
+    border-top-color: rgb(210, 210,210);
+    border-bottom-color:rgb(210, 210,210);
+
 }
 
 #mouseHole #input-container{
@@ -84,6 +97,11 @@ input[type=radio] {
     cursor: pointer;
     vertical-align: center;
     background: #fff;
-    border: 1.5px solid rgb(200, 200,200);
+    border: 1.5px solid rgb(200, 200, 200);
 }
 
+#Instructions {
+    width: 728px;
+    height: 114px;
+    margin: 0 auto;
+}
