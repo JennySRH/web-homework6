@@ -8,6 +8,7 @@
 
 #button-container #record input{
     margin-bottom: 4px;
+    margin-left: 2px;
     height: 17px;
     width: 38px;
 }
@@ -69,13 +70,20 @@
 }
 
 #mouseHole #input-container input{
-    margin-right: 5px;
+    margin-right: 4px;
     margin-top:8px;
-    border:2px solid rgb(238, 238,238);
-
 }
 
-input[type="radio"]:checked + label::before{
-    background-color: white;
-    
+input[type=radio] {
+    -webkit-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    cursor: pointer;
+    vertical-align: center;
+    background: #fff;
+    border: 1.5px solid rgb(200, 200,200);
 }
+

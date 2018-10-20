@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Page Title</title>
+    <title>Mouse</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="mouseStyle.css" />
 </head>
@@ -13,15 +13,15 @@
         <p id="overview">Test your skill. How many boxes(moles) can you check(hit) in 30 seconds?</p>
         <div id="button-container">
             <div id="gameStart">
-                <button>Start Game | Stop Game</button>
-                <input>
+                <button id="startButton">Start Game | Stop Game</button>
+                <input id="start-input">
             </div>
             <div id="record">
                 <div>
-                    Time:<input>
+                    Time:<input id="time-input">
                 </div>
                 <div>
-                    Score:<input>
+                    Score:<input id="record-input">
                 </div>
             </div>
         </div>
@@ -29,13 +29,22 @@
     <div id="blank"></div>
     <div id="mouseHole">
         <div id="input-container">
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio">
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio">
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"> 
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio">
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio">
-                <input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio"><input type="radio">                   
+            <form>  
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+                <input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r"><input type="radio" class="r">     
+            </form>        
         </div>
+    </div>
+    <div>
+        <p>Instructions:</p>
+        <ol>
+            <li>Click on the radio buttons(moles) as they are selected randomly by the computer.</li>
+            <li>1 point per hit, minus 1 point per miss.</li>
+        </ol>
     </div>
 </body>
 <script src="mouseMain.js"></script>

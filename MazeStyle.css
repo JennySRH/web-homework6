@@ -4,6 +4,10 @@ body{
     margin: 0 auto;
 }
 
+#blank{
+    height: 60px;;
+}
+
 #Display{
     margin: 0 auto;
     height: 60px;
